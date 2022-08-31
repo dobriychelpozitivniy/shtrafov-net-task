@@ -1,0 +1,6 @@
+[App]
+GrpcServerPort = ":8082"
+GrpcHttpServerPort = ":8083"
+
+[RusporfileService]
+Url = "https://www.rusprofile.ru/search?query=%s"

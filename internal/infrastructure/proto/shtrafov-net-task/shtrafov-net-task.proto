@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option go_package = "shtrafov-net-task/grpcService";
+
+import "internal/proto/google/api/annotations.proto";
+
+service INNService {
+  rpc GetOrganisationInfo (INNRequest) returns (INNResponse) {
+    option (google.api.http) = {
+      get: "/organisation_info/{INN}"
+    };
+  }
+}
+
+message INNRequest {
+  string INN = 1;
+}
+
+message INNResponse {
+   string INN = 1;
+   string KPP = 2;
+   string NAME = 3;
+   string FIO = 4;
+}

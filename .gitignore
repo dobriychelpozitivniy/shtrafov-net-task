@@ -1,0 +1,6 @@
+*-ignore*
+*secret*
+.vscode
+.markdownlint.json
+.idea
+*.exe
